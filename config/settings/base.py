@@ -15,9 +15,9 @@ DEFAULT_APPS = [
 ]
 CUSTOM_APPS = [
     # Custom application
-    'apps.genre',
     'apps.media',
-    'apps.platforms'
+    'apps.user',
+    'apps.usage'
 ]
 THIRD_PARTY_APPS = [
     # Third-party application
@@ -96,3 +96,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'user.User'
